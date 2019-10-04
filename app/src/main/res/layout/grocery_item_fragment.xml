@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/colorPrimaryDark">
+
+    <EditText
+        android:id="@+id/grocery_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="40dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:textColor="@android:color/white"
+        android:gravity="center"
+        android:hint="Item Name"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:paddingTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/grocery_amount"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:layout_marginLeft="20dp"
+            android:hint="Amount"
+            android:textSize="18dp"/>
+
+        <Switch
+            android:id="@+id/grocery_recurring"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:paddingEnd="32dp"
+            android:gravity="right"
+            android:text="Recurring    "/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/grocery_location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorAccent"
+        android:textColorHint="@android:color/white"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:textSize="28dp"
+        android:gravity="center"
+        android:hint="Location"/>
+
+    <Button
+        android:id="@+id/add_new"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:textColor="@android:color/white"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:text="Add"/>
+
+</LinearLayout>
